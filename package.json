@@ -1,0 +1,33 @@
+{
+  "name": "coursera_taf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test_all": "wdio run ./configuration/wdio.conf.ts",
+    "test_search": "wdio run ./configuration/wdio.conf.ts --tag=@search",
+    "test_menu": "wdio run ./configuration/wdio.conf.ts --tag=@menu",
+    "test_filter": "wdio run ./configuration/wdio.conf.ts --tag=@filter"
+  },
+  "author": "Katsiaryna Filipenia",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^7.7.3",
+    "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+    "@rpii/wdio-html-reporter": "^7.0.0",
+    "@types/chai": "^4.2.18",
+    "@wdio/cucumber-framework": "^7.7.3",
+    "@wdio/local-runner": "^7.7.3",
+    "@wdio/spec-reporter": "^7.7.3",
+    "chai": "^4.3.4",
+    "chromedriver": "^91.0.0",
+    "log4js": "^6.3.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2",
+    "wdio-chromedriver-service": "^7.1.0",
+    "webdriverio": "^7.7.3"
+  }
+}
